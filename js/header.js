@@ -3,13 +3,18 @@ function createHeader() {
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
 
-    const navItems = ['Home', 'About', 'Projects', 'Contact'];
+    const navItems = [
+        { name: 'Home', link: 'index.html' },
+        { name: 'About', link: 'about.html' },
+        { name: 'Projects', link: 'projects.html' },
+        { name: 'Contact', link: 'contact.html' }
+    ];
 
     navItems.forEach(item => {
         const li = document.createElement('li');
         const a = document.createElement('a');
-        a.href = `#${item.toLowerCase()}`;
-        a.textContent = item;
+        a.href = item.link;
+        a.textContent = item.name;
         li.appendChild(a);
         ul.appendChild(li);
     });
