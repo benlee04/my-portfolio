@@ -1,0 +1,83 @@
+/* Ensure the container uses Flexbox to align items side by side */
+.container {
+    display: flex;
+    justify-content: space-between; /* Space out the items */
+    align-items: center; /* Center items vertically */
+}
+
+.bio {
+    width: 50%; /* Adjust width as needed */
+    padding-right: 20px;
+}
+
+.word-cloud {
+    position: relative;
+    width: 50%; /* Adjust width as needed */
+    height: 400px; /* Adjust height as necessary */
+    background: #222; /* Background color */
+    color: white;
+    overflow: hidden; /* Ensure content doesn't spill outside */
+}
+
+.word-cloud .skill {
+    color: white;
+    position: absolute;
+    font-weight: bold;
+}
+
+.word-cloud .large {
+    font-size: 36px;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+}
+
+.word-cloud .medium {
+    font-size: 24px;
+}
+
+.word-cloud .small {
+    color: rgb(103, 142, 161);
+    font-size: 16px;
+}
+
+/* Position each word specifically */
+.word-cloud .skill:nth-child(1) {
+    top: 20px;
+    left: 60%;
+}
+
+.word-cloud .skill:nth-child(2) {
+    top: 100px;
+    left: 70%;
+}
+
+.word-cloud .skill:nth-child(3) {
+    top: 180px;
+    left: 50%;
+}
+
+.word-cloud .skill:nth-child(4) {
+    top: 200px;
+    left: 80%;
+}
+
+.word-cloud .skill:nth-child(5) {
+    top: 150px;
+    left: 60%;
+}
+
+.word-cloud .skill:nth-child(6) {
+    top: 250px;
+    left: 70%;
+}
+
+.word-cloud .skill:nth-child(7) {
+    top: 50px;
+    left: 80%;
+}
+
+.word-cloud .skill:nth-child(8) {
+    top: 220px;
+    left: 90%;
+}
